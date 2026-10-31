@@ -1,0 +1,1309 @@
+/* =====================================================
+   FARMEASE - GLOBAL STYLES
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    color: #173b2a;
+    background: #f7fcf5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5f0e5;
+    box-shadow: 0 3px 15px rgba(22, 101, 52, 0.04);
+}
+
+.navbar nav {
+    min-height: 72px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #166534;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.nav-link {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #15803d;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.btn-primary,
+.btn-outline,
+.btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    border: 1px solid #15803d;
+    background: #15803d;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    border-color: #166534;
+    background: #166534;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    border: 1px solid #15803d;
+    background: #ffffff;
+    color: #166534;
+}
+
+.btn-outline:hover {
+    background: #f0fdf4;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #166534;
+}
+
+.btn-light:hover {
+    background: #dcfce7;
+}
+
+.btn-large {
+    min-height: 50px;
+    padding: 14px 25px;
+}
+
+/* =====================================================
+   LANDING PAGE - HERO
+===================================================== */
+
+.hero-section {
+    overflow: hidden;
+    background:
+            radial-gradient(
+                    circle at 85% 15%,
+                    rgba(190, 242, 100, 0.30),
+                    transparent 32%
+            ),
+            linear-gradient(
+                    135deg,
+                    #effcf0,
+                    #ffffff 55%,
+                    #ecfccb
+            );
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 15px;
+    border: 1px solid #bbf7d0;
+    border-radius: 30px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    min-width: 0;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    max-height: 500px;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: 0 20px 50px rgba(22, 101, 52, 0.13);
+}
+
+.floating-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border: 1px solid #e5f0e5;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.09);
+}
+
+.floating-card-top {
+    top: 30px;
+    left: -25px;
+}
+
+.floating-card-bottom {
+    right: -20px;
+    bottom: 30px;
+}
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #15803d;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    margin: 0 0 15px;
+    color: #123d2b;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #647067;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.text-gradient {
+    color: #15803d;
+}
+
+/* =====================================================
+   EQUIPMENT SECTION
+===================================================== */
+
+#equipment {
+    position: relative;
+    padding: 75px 0 85px;
+    background:
+            radial-gradient(
+                    ellipse at 5% 10%,
+                    rgba(187, 247, 208, 0.35),
+                    transparent 35%
+            ),
+            linear-gradient(135deg, #f4fbf1, #ffffff, #eef8e9);
+}
+
+#equipment .section-heading {
+    margin-bottom: 35px;
+}
+
+#equipment .container > .grid {
+    align-items: stretch;
+}
+
+.equipment-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #dcebdd;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(22, 101, 52, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipment-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(22, 101, 52, 0.14);
+}
+
+.equipment-image-wrapper {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+    background: #e8f5e9;
+}
+
+.equipment-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.equipment-card:hover .equipment-image {
+    transform: scale(1.05);
+}
+
+.equipment-tag {
+    position: absolute;
+    bottom: 13px;
+    left: 14px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: #e7fbe9;
+    color: #166534;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.equipment-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.equipment-category {
+    margin-bottom: 8px;
+    color: #15803d;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.equipment-title {
+    margin: 0 0 10px;
+    color: #123d2b;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.equipment-description {
+    margin: 0 0 20px;
+    color: #647067;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.equipment-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 8px;
+    color: #166534;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.equipment-link:hover {
+    color: #4d7c0f;
+}
+
+/* =====================================================
+   BENEFITS SECTION
+===================================================== */
+
+.benefits-section {
+    background: linear-gradient(135deg, #effcf0, #f7fee7);
+}
+
+.feature-card {
+    height: 100%;
+    padding: 30px 25px;
+    border: 1px solid #dcfce7;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(22, 101, 52, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(22, 101, 52, 0.10);
+}
+
+.feature-icon {
+    margin-bottom: 18px;
+    font-size: 36px;
+}
+
+.feature-title {
+    margin: 0 0 12px;
+    color: #123d2b;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.feature-description {
+    margin: 0;
+    color: #647067;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-image {
+    display: block;
+    width: 100%;
+    max-height: 450px;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(22, 101, 52, 0.10);
+}
+
+/* =====================================================
+   CALL TO ACTION
+===================================================== */
+
+.cta-section {
+    overflow: hidden;
+    background: linear-gradient(135deg, #14532d, #166534);
+    color: #ffffff;
+}
+
+.cta-section h2 {
+    color: #ffffff;
+}
+
+.cta-section p {
+    color: #dcfce7;
+}
+
+/* =====================================================
+   LANDING PAGE FOOTER
+===================================================== */
+
+.footer {
+    background: linear-gradient(135deg, #102719, #14532d);
+    color: #ffffff;
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer-link {
+    color: #d1fae5;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: #d1fae5;
+    font-size: 13px;
+}
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-page {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #effcf0, #f7fee7);
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 72px);
+    padding: 45px 20px;
+}
+
+.login-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 950px;
+    overflow: hidden;
+    border: 1px solid #e5f0e5;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(22, 101, 52, 0.10);
+}
+
+.login-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 40px;
+    background: #174d32;
+    color: #ffffff;
+}
+
+.login-info h1 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.login-info p {
+    color: #dcebdc;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.login-benefits {
+    margin-top: 20px;
+}
+
+.login-form {
+    padding: 45px 40px;
+}
+
+.login-form h2 {
+    margin: 0 0 10px;
+    color: #174d32;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+.login-subtitle {
+    margin-bottom: 28px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.login-form .form-group {
+    margin-bottom: 21px;
+}
+
+.login-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-form .form-group input {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #1f2937;
+    font-size: 14px;
+}
+
+.login-form .form-group input:focus {
+    border-color: #27834b;
+    box-shadow: 0 0 0 3px rgba(39, 131, 75, 0.12);
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #247442;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.login-button:hover {
+    background: #185b32;
+}
+
+.login-message {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.register-link {
+    margin-top: 25px;
+    color: #6b7280;
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #247442;
+    font-weight: 700;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   REGISTER PAGE
+   Works with your existing register.jsp
+===================================================== */
+
+body.bg-green-50 {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ecfdf5, #f7fee7);
+    color: #1f2937;
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+/* Register navigation */
+body.bg-green-50 > header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5f0e5;
+    box-shadow: 0 3px 15px rgba(22, 101, 52, 0.05);
+}
+
+body.bg-green-50 > header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 12px 24px;
+}
+
+body.bg-green-50 > header nav a {
+    color: #166534;
+    font-weight: 700;
+}
+
+/* Main register area */
+body.bg-green-50 > main {
+    width: 100%;
+    min-height: 0;
+    padding: 55px 24px;
+    box-sizing: border-box;
+}
+
+/* Registration two-column grid */
+body.bg-green-50 > main > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Left side content */
+body.bg-green-50 > main > div > section:first-child {
+    display: block;
+}
+
+body.bg-green-50 > main > div > section:first-child .hero-badge {
+    margin-bottom: 15px;
+}
+
+body.bg-green-50 > main > div > section:first-child h1 {
+    margin: 15px 0;
+    color: #123d2b;
+    font-size: clamp(32px, 3.2vw, 44px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+body.bg-green-50 > main > div > section:first-child p {
+    color: #596b60;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+body.bg-green-50 > main > div > section:first-child > div {
+    margin-top: 25px;
+}
+
+body.bg-green-50 > main > div > section:first-child > div > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+/* Registration card */
+body.bg-green-50 > main > div > section:last-child {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 36px;
+    box-sizing: border-box;
+    border: 1px solid #dcfce7;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(22, 101, 52, 0.10);
+}
+
+/* Card heading */
+body.bg-green-50 > main > div > section:last-child > div:first-child {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+body.bg-green-50 > main > div > section:last-child h2 {
+    margin: 0;
+    color: #123d2b;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+body.bg-green-50 > main > div > section:last-child > div:first-child p {
+    margin-top: 9px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Registration messages */
+body.bg-green-50 #registerForm ~ p {
+    color: #6b7280;
+}
+
+body.bg-green-50 .border-red-200 {
+    border-color: #fecaca;
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+body.bg-green-50 .border-green-200 {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+    color: #166534;
+}
+
+/* Form structure */
+body.bg-green-50 #registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    width: 100%;
+}
+
+body.bg-green-50 #registerForm > div {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+/* Form labels */
+body.bg-green-50 #registerForm label {
+    display: block;
+    margin: 0 0 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Text inputs and dropdown */
+body.bg-green-50 #registerForm input:not([type="checkbox"]),
+body.bg-green-50 #registerForm select {
+    display: block;
+    width: 100%;
+    height: 47px;
+    min-height: 47px;
+    margin: 0;
+    padding: 11px 13px;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #1f2937;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.bg-green-50 #registerForm input::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+body.bg-green-50 #registerForm input:not([type="checkbox"]):focus,
+body.bg-green-50 #registerForm select:focus {
+    outline: none;
+    border-color: #15803d;
+    box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.12);
+}
+
+/* Password helper text */
+body.bg-green-50 #registerForm div p {
+    margin: 7px 0 0;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Terms checkbox */
+body.bg-green-50 #registerForm > div:has(#terms) {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+body.bg-green-50 #registerForm input[type="checkbox"] {
+    flex: 0 0 17px;
+    width: 17px;
+    height: 17px;
+    margin: 3px 0 0;
+    accent-color: #15803d;
+    cursor: pointer;
+}
+
+body.bg-green-50 #registerForm label[for="terms"] {
+    margin: 0;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* Password mismatch message */
+body.bg-green-50 #passwordError {
+    color: #dc2626;
+    font-size: 13px;
+}
+
+body.bg-green-50 #passwordError.hidden {
+    display: none;
+}
+
+/* Register submit button */
+body.bg-green-50 #registerForm button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 49px;
+    margin: 0;
+    padding: 13px 18px;
+    border: 1px solid #15803d;
+    border-radius: 10px;
+    background: #15803d;
+    color: #ffffff;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+body.bg-green-50 #registerForm button[type="submit"]:hover {
+    border-color: #166534;
+    background: #166534;
+    transform: translateY(-1px);
+}
+
+body.bg-green-50 #registerForm button[type="submit"]:focus-visible {
+    outline: 3px solid #bbf7d0;
+    outline-offset: 3px;
+}
+
+/* Already have an account */
+body.bg-green-50 > main > div > section:last-child > p:last-child {
+    margin: 24px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+body.bg-green-50 > main > div > section:last-child > p:last-child a {
+    color: #15803d;
+    font-weight: 800;
+}
+
+body.bg-green-50 > main > div > section:last-child > p:last-child a:hover {
+    color: #166534;
+    text-decoration: underline;
+}
+
+/* Register footer */
+body.bg-green-50 > footer {
+    width: 100%;
+    margin: 0;
+    padding: 18px 20px;
+    border-top: 1px solid #dcfce7;
+    background: #ffffff;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 900px) {
+    body.bg-green-50 > main > div {
+        grid-template-columns: 1fr;
+        max-width: 580px;
+        gap: 30px;
+    }
+
+    body.bg-green-50 > main > div > section:first-child h1 {
+        font-size: 34px;
+    }
+
+    .floating-card-top {
+        left: 10px;
+    }
+
+    .floating-card-bottom {
+        right: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .login-card {
+        grid-template-columns: 1fr;
+    }
+
+    .login-info {
+        padding: 30px;
+    }
+
+    .login-info h1 {
+        font-size: 28px;
+    }
+
+    .login-form {
+        padding: 30px 24px;
+    }
+
+    .login-wrapper {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    body.bg-green-50 > header nav {
+        padding: 12px 16px;
+    }
+
+    body.bg-green-50 > main {
+        padding: 28px 15px;
+    }
+
+    body.bg-green-50 > main > div {
+        gap: 24px;
+    }
+
+    body.bg-green-50 > main > div > section:first-child h1 {
+        font-size: 30px;
+    }
+
+    body.bg-green-50 > main > div > section:last-child {
+        padding: 24px 18px;
+        border-radius: 15px;
+    }
+
+    body.bg-green-50 > main > div > section:last-child h2 {
+        font-size: 24px;
+    }
+
+    #equipment {
+        padding: 45px 0 50px;
+    }
+
+    .equipment-image-wrapper {
+        height: 200px;
+    }
+
+    .equipment-content {
+        padding: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .floating-card {
+        padding: 12px;
+    }
+
+    .floating-card-top {
+        top: 10px;
+        left: 8px;
+    }
+
+    .floating-card-bottom {
+        right: 8px;
+        bottom: 10px;
+    }
+}
+/* =========================================
+   FARM EASE REGISTRATION PAGE FIX
+   File: src/main/webapp/css/style.css
+========================================= */
+
+body.bg-green-50 {
+    margin: 0;
+    min-height: 100vh;
+    background: #f0fdf4;
+    color: #1f2937;
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #dcfce7;
+}
+
+.navbar nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar .btn-outline {
+    display: inline-block;
+    padding: 10px 24px;
+    color: #166534;
+    border: 1px solid #15803d;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar .btn-outline:hover {
+    background: #15803d;
+    color: white;
+}
+
+/* Main registration section */
+body.bg-green-50 > main {
+    min-height: calc(100vh - 160px);
+    padding: 55px 24px;
+    box-sizing: border-box;
+}
+
+body.bg-green-50 > main > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+/* Left-side content */
+body.bg-green-50 > main h1 {
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 24px;
+    color: #111827;
+}
+
+body.bg-green-50 > main section:first-child p {
+    line-height: 1.8;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 600;
+}
+
+/* Registration card */
+body.bg-green-50 > main > div > section:last-child {
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #dcfce7;
+    border-radius: 24px;
+    padding: 36px;
+    box-shadow: 0 20px 45px rgba(22, 101, 52, 0.10);
+}
+
+body.bg-green-50 > main > div > section:last-child h2 {
+    margin: 0;
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #111827;
+}
+
+body.bg-green-50 > main > div > section:last-child > div:first-child {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+body.bg-green-50 > main > div > section:last-child > div:first-child > div {
+    margin-bottom: 12px;
+    font-size: 42px;
+}
+
+body.bg-green-50 > main > div > section:last-child > div:first-child p {
+    margin-top: 10px;
+    color: #6b7280;
+}
+
+/* Form spacing */
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#registerForm > div {
+    width: 100%;
+}
+
+#registerForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+#registerForm input:not([type="checkbox"]),
+#registerForm select {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1f2937;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+#registerForm input:not([type="checkbox"]):focus,
+#registerForm select:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+#registerForm input::placeholder {
+    color: #9ca3af;
+}
+
+#registerForm > div p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Terms checkbox */
+#registerForm > div:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#registerForm > div:has(input[type="checkbox"]) input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    accent-color: #15803d;
+    flex-shrink: 0;
+}
+
+#registerForm > div:has(input[type="checkbox"]) label {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Create Account button */
+#registerForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #15803d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(21, 128, 61, 0.15);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#registerForm button[type="submit"]:hover {
+    background: #166534;
+    transform: translateY(-1px);
+}
+
+/* Login link */
+body.bg-green-50 > main > div > section:last-child > p:last-child {
+    margin-top: 26px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+body.bg-green-50 a {
+    transition: color 0.2s ease;
+}
+
+/* Footer */
+body.bg-green-50 > footer {
+    padding: 20px 24px;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #dcfce7;
+}
+
+body.bg-green-50 > footer p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    body.bg-green-50 > main {
+        min-height: auto;
+        padding: 30px 16px;
+    }
+
+    body.bg-green-50 > main > div {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    body.bg-green-50 > main > div > section:first-child {
+        display: none;
+    }
+
+    body.bg-green-50 > main > div > section:last-child {
+        padding: 24px 20px;
+        border-radius: 18px;
+    }
+
+    body.bg-green-50 > main > div > section:last-child h2 {
+        font-size: 26px;
+    }
+
+    .navbar nav {
+        padding: 14px 16px;
+    }
+}
