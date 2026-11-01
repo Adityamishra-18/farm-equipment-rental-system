@@ -31,8 +31,6 @@ public class Booking {
     @Column(name = "status", nullable = false)
     private String status = "PENDING";
 
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
 
     public Booking() {
     }
@@ -93,13 +91,7 @@ public class Booking {
         this.status = status;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
     public long getRentalDays() {
         if (startDate == null || endDate == null) {
             return 0;
